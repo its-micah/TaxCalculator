@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER PRICE" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tBD-M1-S1b">
+                                <rect key="frame" x="214" y="194" width="172" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="VbS-O1-3p0"/>
+                                    <constraint firstAttribute="height" constant="30" id="ytB-5l-aLx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VbS-O1-3p0"/>
+                                        <exclude reference="ytB-5l-aLx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="VbS-O1-3p0"/>
+                                        <include reference="ytB-5l-aLx"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nDV-bd-yjm">
+                                <rect key="frame" x="239" y="286" width="123" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="1Zk-sP-Gtt"/>
+                                    <constraint firstAttribute="height" constant="28" id="z5O-tW-vTY"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="CA"/>
+                                    <segment title="CHI"/>
+                                    <segment title="NY"/>
+                                </segments>
+                                <color key="tintColor" red="0.16476233300000001" green="0.73803049330000003" blue="0.72359299659999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1Zk-sP-Gtt"/>
+                                        <exclude reference="z5O-tW-vTY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1Zk-sP-Gtt"/>
+                                        <include reference="z5O-tW-vTY"/>
+                                    </mask>
+                                </variation>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdV-Ak-xiZ">
+                                <rect key="frame" x="214" y="363" width="172" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="UcB-lT-mfu"/>
+                                    <constraint firstAttribute="width" constant="172" id="rjW-rj-gzG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="UcB-lT-mfu"/>
+                                        <exclude reference="rjW-rj-gzG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="UcB-lT-mfu"/>
+                                        <include reference="rjW-rj-gzG"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGI-GY-S4a">
+                                <rect key="frame" x="232" y="424" width="136" height="33"/>
+                                <color key="backgroundColor" red="0.16476233303546906" green="0.73803049325942993" blue="0.72359299659729004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="1u1-SO-wJE"/>
+                                    <constraint firstAttribute="width" constant="172" id="ADg-Bo-WBy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="CALCULATE TAX">
+                                    <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1u1-SO-wJE"/>
+                                        <exclude reference="ADg-Bo-WBy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1u1-SO-wJE"/>
+                                        <include reference="ADg-Bo-WBy"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onCalculateButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nhT-bO-gee"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21882684528827667" green="0.35430198907852173" blue="0.73494040966033936" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="nDV-bd-yjm" secondAttribute="centerX" id="9yh-dD-1Zq"/>
+                            <constraint firstItem="DdV-Ak-xiZ" firstAttribute="top" secondItem="eGI-GY-S4a" secondAttribute="bottom" constant="69" id="Hwg-l8-HsW"/>
+                            <constraint firstAttribute="centerX" secondItem="eGI-GY-S4a" secondAttribute="centerX" id="Pfj-Ct-JEj"/>
+                            <constraint firstItem="nDV-bd-yjm" firstAttribute="top" secondItem="tBD-M1-S1b" secondAttribute="bottom" constant="68" id="bC4-k4-bvi"/>
+                            <constraint firstItem="eGI-GY-S4a" firstAttribute="top" secondItem="nDV-bd-yjm" secondAttribute="bottom" constant="66" id="hPc-Kz-33Y"/>
+                            <constraint firstAttribute="centerY" secondItem="eGI-GY-S4a" secondAttribute="centerY" id="nf0-TL-JC5"/>
+                            <constraint firstAttribute="centerX" secondItem="DdV-Ak-xiZ" secondAttribute="centerX" id="qbQ-CP-HKj"/>
+                            <constraint firstAttribute="centerX" secondItem="tBD-M1-S1b" secondAttribute="centerX" id="sBI-HA-Kwm"/>
+                            <constraint firstAttribute="centerX" secondItem="tBD-M1-S1b" secondAttribute="centerX" id="wzP-rf-Y39"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="sBI-HA-Kwm"/>
+                                <exclude reference="wzP-rf-Y39"/>
+                                <exclude reference="9yh-dD-1Zq"/>
+                                <exclude reference="bC4-k4-bvi"/>
+                                <exclude reference="Pfj-Ct-JEj"/>
+                                <exclude reference="hPc-Kz-33Y"/>
+                                <exclude reference="nf0-TL-JC5"/>
+                                <exclude reference="Hwg-l8-HsW"/>
+                                <exclude reference="qbQ-CP-HKj"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="sBI-HA-Kwm"/>
+                                <include reference="wzP-rf-Y39"/>
+                                <include reference="9yh-dD-1Zq"/>
+                                <include reference="bC4-k4-bvi"/>
+                                <include reference="Pfj-Ct-JEj"/>
+                                <include reference="hPc-Kz-33Y"/>
+                                <include reference="nf0-TL-JC5"/>
+                                <include reference="Hwg-l8-HsW"/>
+                                <include reference="qbQ-CP-HKj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="priceTextField" destination="tBD-M1-S1b" id="36L-wl-I4L"/>
+                        <outlet property="resultLabel" destination="DdV-Ak-xiZ" id="U64-w0-RpX"/>
+                        <outlet property="segmentedControl" destination="nDV-bd-yjm" id="8cR-VT-Rj9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="286.5"/>
+        </scene>
+    </scenes>
+</document>
